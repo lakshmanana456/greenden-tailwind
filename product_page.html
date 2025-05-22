@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenden</title>
+  <link rel="icon" href="./images/greenden_logo.png">
+
+  <!-- Tailwind css cdn link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+</head>
+
+<body>
+  <!-- responsive navbar -->
+  <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <h1 class="text-2xl font-medium">GREENDEN</h1>
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      width="25" height="25" class="md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class="flex gap-5 text-gray-600 hidden md:flex">
+      <li>
+        <a class="hover:underline hover:text-black" href="index.html">Home</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black underline text-black" href="product_page.html">Products</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="contact_page.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- our products -->
+  <section class="p-4 text-center">
+    <h1 class="font-bold text-3xl mt-5 ">Our Products</h1>
+    <input type="text" placeholder="Search for Products" class="p-2 mt-3 mb-3 border border-black focus:outline-none"
+      style="width: 80%;">
+    <div class="grid grid-cols-2 mt-5 gap-5 md:grid-cols-4">
+
+      <div>
+        <img src="./images/futer.jpg" alt="" style="width: 200px; height: 250px;"
+          class="inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Futer Gogo</h1>
+        <p>₹290</p>
+      </div>
+
+      <div>
+        <img src="./images/titu.png" alt="" style="width: 200px; height: 250px;"
+          class="inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Titu Loyal</h1>
+        <p>₹250</p>
+      </div>
+
+      <div>
+        <img src="./images/jisu.jpg" alt="" style="width: 200px; height: 250px;"
+          class="inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Jisu Tiny</h1>
+        <p>₹160</p>
+      </div>
+
+      <div>
+        <img src="./images/lilly.jpg" alt="" style="width: 200px; height: 250px;"
+          class="inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Lilly</h1>
+        <p>₹100</p>
+      </div>
+
+      <div>
+        <img src="./images/butterfly_ceramic.jpg" alt="" style="width: 200px; height: 250px;"
+          class="inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Butterfly Ceramic</h1>
+        <p>₹320</p>
+      </div>
+
+      <div>
+        <img src="./images/color_plant.jpg" alt="" style="width: 200px; height: 250px;"
+          class="inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Pink Leaf Plant</h1>
+        <p>₹250</p>
+      </div>
+
+      <div>
+        <img src="./images/leaf_plant.jpg" alt="" style="width: 200px; height: 250px;"
+          class="inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Leaf Plant</h1>
+        <p>₹180</p>
+      </div>
+
+      <div>
+        <img src="./images/peace_lily.jpg" alt="" style="width: 200px; height: 250px;"
+          class="inline hover:shadow-xl transform hover:-translate-y-2">
+        <h1>Peace Lily</h1>
+        <p>₹300</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section class="bg-green-100 flex flex-col gap-5 p-10 mt-3">
+    <h1 class="text-3xl font-bold ">Greenden</h1>
+    <p>Discover beautiful, healthy plants delivered to your door—perfect for home and office decor.</p>
+    <p>&copy;2025 Greenday.com</p>
+  </section>
+</body>
+
+</html>
