@@ -14,10 +14,10 @@
 <body>
   <!-- responsive navbar -->
   <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
-    <h1 class="text-2xl font-medium">GREENDEN</h1>
+    <h1 class="text-2xl font-medium ">GREENDEN</h1>
 
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-      width="25" height="25" class="md:hidden">
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      width="25" height="25" class="md:hidden cursor-pointer">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
 
@@ -35,8 +35,26 @@
 
   </nav>
 
+<!-- side navbar -->
+ <section id="sidenav" class="bg-green-100 fixed z-20 top-0 md:hidden transition-all duration-1000" style=" width: 50%; height: 100vh; right: -50%;">
+  <div class="text-right p-5">
+    <p id="closenav" class="cursor-pointer inline transition-all duration-1000">X</p>
+  </div>
+  <ul class="flex flex-col  gap-10 items-center text-gray-600 ">
+      <li>
+        <a class="hover:underline hover:text-black text-black" href="index.html">Home</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="product_page.html">Products</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:text-black" href="contact_page.html">Contact</a>
+      </li>
+    </ul>
+ </section>
+
   <!--  Header section -->
-  <section class="bg-green-100 p-4 md:p-10 flex justify-center">
+  <section class="bg-green-100 p-4 md:p-10 flex justify-between">
     <div>
       <p class="mb-4">We offer you a wide range of Artificial and Natural Flowers</p>
       <h2 class="font-bold text-3xl md:text-5xl mb-5">Plants for your Interior</h2>
@@ -189,7 +207,7 @@
     <p>Discover beautiful, healthy plants delivered to your door—perfect for home and office decor.</p>
     <p>&copy;2025 Greenday.com</p>
   </section>
-
+<script src="index.js"></script>
 </body>
 
 </html>
